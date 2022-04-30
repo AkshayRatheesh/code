@@ -1,0 +1,32 @@
+<html><head>
+    <style>
+        body{background:gray;}
+h1{text-align:center;margin:60px;}
+.forms{text-align:center;margin:30px auto 30px auto;color:white;}  
+.user_values{margin:40px auto 20px auto;height:40px;border-radius:10px;}    
+.submit{color:white;background:gray;border-radius:10px;}
+.ttt{color: red;}
+    </style>
+    </head> 
+ <body> 
+  <form class="forms" name="form"> 
+   <label>Enter the radius of circle:</label> 
+   <br> 
+   <input type="number" class="user_values" name="Radius" size="10"> 
+   <br> 
+   
+   <input class="submit" type="button" value="Calculate" onclick="Calculate();"> 
+  </form> 
+  <h1 id="result">yyyy</h1> 
+
+ <script>
+     
+ function Calculate(){
+let rl=document.form.Radius.value;
+let circumference=2 * rl *3.141;
+let area=3.141*rl*rl ;
+document.getElementById('result').innerHTML="result is <br>"+area+"<br>circumference is <br>"+circumference
+}
+
+     </script>
+</body></html>

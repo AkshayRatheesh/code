@@ -1,0 +1,28 @@
+<html><head>
+    <title>perfect, abundant or deficient.</title> 
+<style>
+    div{display:flex;justify-content:center;margin:100px;}
+#val{max-width:500px;height:60px;font-size:20px;font-weight:bold;}
+#result{height:65px;font-size:20px;font-weight:bold;}
+</style>   
+</head> 
+   <body bgcolor="gray">
+    <div> 
+     <input type="number" placeholder="enter your number" id="val"> 
+     <input type="submit" onclick="find()" id="result"> 
+    </div> 
+   <script>
+       function  find(){
+let usr_val=document.getElementById('val').value
+let sum=0
+for(let i=0;i<usr_val;i++){
+if(usr_val%i==0) 
+sum=sum+i}
+if(sum==usr_val){
+alert(usr_val+" is a perfect number")}
+else if(sum>usr_val){
+alert(usr_val +" is a abundant number")}
+else
+alert(usr_val +" is a Deficient ")}
+   </script>
+  </body></html>
